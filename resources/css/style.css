@@ -1,0 +1,23 @@
+@import url(./home.css);
+@import url(./art1.css);
+@import url(./art2.css);
+@import url(./art3.css);
+@import url(./art4.css);
+@import url(./art5.css);
+@import url(./painter.css);
+@import url(./footer.css);
+@import url(./navbar.css);
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+html::-webkit-scrollbar {
+  background-color: black;
+  width: 0.3rem;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 30px;
+}

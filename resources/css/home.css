@@ -1,0 +1,43 @@
+.home {
+  height:100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.595), rgba(0, 0, 0, 0.595)),
+    url("../images/home.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.home .home-content {
+  text-align: center;
+  font-family: "Chelsea Market";
+  flex: 1;
+  margin-inline: 5%;
+}
+
+.home-content h1 {
+  color: rgba(255, 255, 255, 0.286);
+  font-size: clamp(2.5rem, 7vw, 8rem);
+  margin-bottom: 1rem;
+}
+
+.home-content a {
+  font-family: "Montserrat" !important;
+  font-weight: 700;
+  display: inline-block;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+}
+
+.home-content a i {
+  display: inline-block;
+  margin-left: 10px;
+}
+

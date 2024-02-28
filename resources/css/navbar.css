@@ -1,0 +1,110 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+position: fixed;
+inset: 0;
+backdrop-filter: blur(10px);
+}
+
+.navbar a:first-child h1 {
+  color: white;
+  font-family: "Chelsea Market";
+  font-size: 3rem;
+  position: relative;
+}
+.navbar a:first-child h1 span {
+  display: inline-block;
+}
+
+.navbar a:first-child h1 #span1 {
+  color: white;
+  font-family: "Chelsea Market";
+  font-size: 1.5rem !important;
+}
+.navbar a:first-child h1 #span2 {
+  position: absolute;
+  color: white;
+  font-family: "Chelsea Market";
+  font-size: 7rem;
+  top: -102%;
+  right: -23px;
+}
+
+.navbar .nav-links ul {
+  gap: 3rem;
+  display: flex;
+}
+
+.navbar .nav-links ul li a {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Chelsea Market";
+}
+.hamburger {
+  height: 24px;
+  width: 40px;
+  position: relative;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 1000;
+}
+.hamburger input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 999;
+  cursor: pointer;
+}
+.item {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.hamburger #toggle:checked ~ .item-2 {
+  transform: scale(0);
+}
+.hamburger #toggle:checked ~ .item-1 {
+  transform: translateY(11px) rotate(405deg) scale(0.85);
+}
+.hamburger #toggle:checked ~ .item-3 {
+  transform: translateY(-11px) rotate(-405deg) scale(0.85);
+}
+.open {
+  left: 30% !important;
+}
+@media only screen and (max-width: 900px) {
+  .navbar .hamburger {
+    display: flex;
+  }
+  .navbar .nav-links {
+    /* !INSETDEN SONRA LEFT YAZSAN ISLEYECEK AMMA EVVEL YAZSAN YOX */
+    position: fixed;
+    inset: 0;
+    left: 100%;
+    transition: all 0.5s;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+  }
+  .navbar .nav-links ul {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  .navbar .nav-links ul li a {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,55 @@
+.painter {
+  width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 5% 5%;
+  font-family: "Chelsea Market";
+  gap: 3rem;
+  scroll-margin-top: 500px;
+}
+.painter .painter-image figure {
+  height: auto;
+  width: clamp(200px, 100%, 600px);
+  margin-inline: auto;
+}
+.painter .painter-image figure img {
+  height: 100%;
+  width: 100%;
+border: 2px solid white;
+}
+.painter .painter-bio h1 {
+  color: rgba(255, 255, 255, 0.286);
+  font-size: clamp(1.5rem, 5vw, 5rem);
+  margin-bottom: 0.5rem;
+}
+.painter .painter-bio h1 span {
+  color: rgba(255, 255, 255, 0.286);
+  font-size: clamp(0.8rem, 3vw, 2rem);
+}
+.painter .painter-bio p {
+  color: rgba(255, 255, 255, 0.286);
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: 100;
+  line-height: 2.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .painter {
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    gap: 1rem !important;
+  }
+  .painter .painter-bio {
+    text-align: center;
+    margin-bottom: auto;
+  }
+.painter .painter-bio p{
+  line-height: normal;
+}
+  .painter .painter-image figure {
+    max-width: 450px;
+    height: auto;
+  }
+}

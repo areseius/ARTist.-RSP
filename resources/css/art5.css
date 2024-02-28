@@ -1,0 +1,68 @@
+.art5 {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7)),
+    url("../images/art5.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.art5 .art5-content {
+  text-align: center;
+  font-family: "Chelsea Market";
+  flex: 1;
+  margin-inline: 5%;
+}
+
+.art5-content h1 {
+  color: rgba(255, 255, 255, 0.286);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+}
+.art5-content p {
+  color: rgba(255, 255, 255, 0.286);
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: 100;
+  margin-block: 1rem 1.5rem;
+}
+
+.art5-content .buttons-wrapper a {
+  font-family: "Montserrat" !important;
+  font-weight: 700;
+  display: inline-block;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+}
+.art5-content .buttons-wrapper a:first-child {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid blue;
+  margin-right: 2rem;
+}
+
+.art5-content .buttons-wrapper a:last-child {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+}
+@media only screen and (max-width: 400px) {
+  .art5-content .buttons-wrapper a:first-child {
+    margin-inline: auto;
+  }
+  .art5-content .buttons-wrapper a:last-child {
+    margin-inline: auto;
+  }
+  .art5-content .buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+  }
+}

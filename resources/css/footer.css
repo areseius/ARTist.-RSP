@@ -1,0 +1,75 @@
+.footer {
+  width: 100%;
+  background-color: black;
+  border-top: 1px solid rgba(255, 255, 255, 0.286);
+  display: flex;
+  padding: 2% 20% 5%;
+  flex-direction: column;
+  gap: 4rem;
+  font-family: "Chelsea Market";
+}
+.footer .nav-box {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer a {
+  margin-inline: auto;
+}
+.footer a:first-child h1 {
+  color: white;
+  font-family: "Chelsea Market";
+  font-size: 3rem;
+}
+.footer a:first-child h1 span {
+  display: inline-block;
+}
+
+.footer a:first-child h1 #span1 {
+  color: white;
+  font-family: "Chelsea Market";
+  font-size: 1.5rem !important;
+}
+.navbar a:first-child h1 #span2 {
+  position: absolute;
+  color: white;
+  font-family: "Chelsea Market";
+  font-size: 7rem;
+  top: -102%;
+  right: -23px;
+}
+
+.footer nav {
+  flex: 1 100px;
+}
+
+.footer nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer nav ul li {
+  color: rgba(255, 255, 255, 0.286);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 100;
+  cursor: pointer;
+}
+.footer nav ul li:first-child {
+  color: white;
+  font-size: clamp(1rem, 1.5vw, 2em);
+}
+
+.footer nav ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 1000px) {
+  .footer {
+    padding: 5% 10%;
+    gap: 4rem;
+  }
+}
